@@ -1,11 +1,5 @@
 require './kata'
 
-it 'deuce' do
-  stub(referee.deuce?(any, any)).toReturn(true)
-
-  @game.score.should == ':Deuce'
-end
-
 describe 'tennis game' do
   before :each do
     @p1, @p2 = Player.new('John Palino'), Player.new('Barack Obama')
